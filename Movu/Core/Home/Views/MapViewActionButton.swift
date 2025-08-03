@@ -16,7 +16,7 @@ struct MapViewActionButton: View {
                 showLocationSearchView.toggle()
             }
         } label: {
-            Image(systemName: "line.3.horizontal")
+            Image(systemName: showLocationSearchView ? "line.3.horizontal" : "arrow.left")
                 .font(.title3)
                 .foregroundColor(.black)
                 .padding()
